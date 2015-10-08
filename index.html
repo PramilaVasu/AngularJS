@@ -12,10 +12,19 @@
   
   <body ng-controller="LoginCtrl">
     <div ng-app="angular" ng-controller="LoginCtrl">
-      <form nonvalidate>
+      <form nonvalidate class="well">
         <h1>Enter Your<br>
         user Name</h1>
-        
+        <input type="text" ng-model="user.username" placeholder="username"><br><br>
+    
+        <input type="text" ng-model="user.password" placeholder="password">
+   
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="user.remember"> Remember username
+    </label>
+  </div>
+    <button class="btn btn-primary btn-lg active" ng-click="signin()">SignIn</button>
       </form>
       
       
