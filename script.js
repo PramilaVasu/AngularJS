@@ -12,6 +12,12 @@ loginApp.controller('LoginCtrl', function($scope){
     }
 
   };
+return this.request({
+            'method': "POST",
+            'url': "/registration/",
+            'data' :data
+        });
+});
 
-})
+
 
